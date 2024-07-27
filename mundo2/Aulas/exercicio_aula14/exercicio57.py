@@ -1,11 +1,5 @@
-pessoa = 1
+sexo = str(input('digite seu sexo [M/F]')).strip().upper()[0]
 
-while pessoa == 1:
-    sexo = 'M' or 'F'
-    sexo = str(input('digite uma das opcoes[M/F]:')).upper()
-    
-    if sexo != 'M' and sexo != 'F':
-        print("escolha uma das opcoes")
-
-    elif sexo == 'M' and sexo == 'F':
-        break
+while sexo not in  "MF":
+    sexo = str(input('digite novamente:')).strip().upper()[0]
+print("sexo {} registrado com sucesso!".format(sexo))
