@@ -10,4 +10,4 @@ def fatorial(n,show=False):
                 print(' = ',end="")
         f *= c
         return factorial(n)
-print(fatorial(10,show=True))
+print(fatorial(5,show=True))
